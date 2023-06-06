@@ -1,0 +1,44 @@
+[
+    {
+      "id": 1,
+      "name": "clash",
+      "name2": "of clans",
+      "ratings": 5,
+      "color":"`#F20805`",
+      "gradientColors": ["#F20805", "#131313"],
+      "image":"/Users/dinithhasaranga/Desktop/React Native/GamePortal/assets/coc.png"
+
+    },
+    {
+        "id": 2,
+        "name": "jetpack",
+        "name2": "joyride",
+        "ratings": 5,
+        "color":"`#F20805`",
+        "gradientColors": ["#E59244", "#131313"],
+        "image":"/Users/dinithhasaranga/Desktop/React Native/GamePortal/assets/jetpack.png"
+  
+      },
+      {
+        "id": 1,
+        "name": "clash",
+        "name2": "of clans",
+        "ratings": 5,
+        "color":"`#F20805`",
+        "gradientColors": ["#F20805", "#131313"],
+        "image":"/Users/dinithhasaranga/Desktop/React Native/GamePortal/assets/coc.png"
+  
+      },
+      {
+          "id": 2,
+          "name": "jetpack",
+          "name2": "joyride",
+          "ratings": 5,
+          "color":"`#F20805`",
+          "gradientColors": ["#E59244", "#131313"],
+          "image":"/Users/dinithhasaranga/Desktop/React Native/GamePortal/assets/jetpack.png"
+    
+        }
+        
+      
+]
