@@ -2,6 +2,10 @@ import { Image, ScrollView, StyleSheet, Text, TextInput, View } from 'react-nati
 import React from 'react'
 import amashi from  '../assets/amashi.jpeg'
 import serach from  '../assets/search.png'
+import star from  '../assets/star.png'
+
+import coc from  '../assets/coc.png'
+
 import { Stack, Chip } from "@react-native-material/core";
 import { LinearGradient } from 'expo-linear-gradient';
 
@@ -51,11 +55,51 @@ const Home = () => {
   </ScrollView>
   </View>
 
-  <View>
-  <LinearGradient colors={['#FC1518','#131313']} style={styles.GameCard}/>
-  <LinearGradient colors={['#E89340','#131313']} style={styles.GameCard}/>
-  <LinearGradient colors={['#E4E5E3','#131313']} style={styles.GameCard}/>
+  <View style={styles.CardSet}>
+    <ScrollView showsVerticalScrollIndicator={false}>
+  
+  <View style={styles.ImgContainer}>
+  <Image  style={styles.GameImg} source={coc}/>
+  <LinearGradient colors={['#F20805','#131313']} style={styles.GameCard}>
+  <Image  style={styles.GameImg1} source={coc}/>
+  <View style={styles.GameCardData}>
+    <View>
+    <Text style={styles.GameName}>Clash</Text>
+    <Text style={styles.GameName}>Of Clans</Text>
+    <View style={{flexDirection:'row', paddingTop:10 , alignItems:'flex-end'}}>
+    <Image  style={styles.StarImg} source={star}/>
+    <Image  style={styles.StarImg} source={star}/>
+    <Image  style={styles.StarImg} source={star}/>
+    <Image  style={styles.StarImg} source={star}/>
+    <Image  style={styles.StarImg} source={star}/>
 
+    </View>
+
+    </View>
+
+  </View>
+  </LinearGradient>
+
+  </View>
+  <View style={styles.ImgContainer}>
+  <Image  style={styles.GameImg} source={coc}/>
+  <LinearGradient colors={['#E89340','#131313']} style={styles.GameCard}>
+  <Image  style={styles.GameImg1} source={coc}/>
+  
+
+  </LinearGradient>
+
+  </View>
+  <View style={styles.ImgContainer}>
+  <Image  style={styles.GameImg} source={coc}/>
+  <LinearGradient colors={['#E4E4E3','#131313']} style={styles.GameCard}>
+  <Image  style={styles.GameImg1} source={coc}/>
+
+  </LinearGradient>
+
+  </View>
+  
+  </ScrollView>
   </View>
 
       
@@ -145,6 +189,41 @@ paddingTop:10,
         height:160,
         marginVertical:20,
         borderRadius:30,
+        marginTop:-100
+    },
+    CardSet:{
+    },
+    GameImg:{
+        height:200,
+        width:200,
+
+    },
+    GameImg1:{
+        height:200,
+        width:200,
+        marginTop:-100
+
+    },
+    ImgContainer:{
+        marginBottom:-50
+      
+    },
+    GameName:{
+        fontSize:30,
+        color:'#fff',
+        marginBottom:-10,
+        fontWeight:600
+    },
+    GameCardData:{
+        flex:1,
+        alignItems:'center',
+        marginTop:-70,
+        marginLeft:20
+    },
+    StarImg:{
+        width:20,
+        height:20,
+        marginRight:5
     }
 
 })
